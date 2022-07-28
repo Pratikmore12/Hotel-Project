@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twilight Restaurant</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/style1.css">
+
+</head>
+ <style>
+     @font-face {
+    font-family: pop;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: dance;
+    src: url(./fonts/DancingScript-Regular.ttf);
+}
+.contact-section{
+    width: 100%;
+    height: auto;
+    padding: 80px 15%;
+    background-color: #333;
+    color: #fff;
+    font-family: pop;
+    position: relative;
+    overflow: hidden;
+}
+.contact-section > h2{
+    font-size: 29px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.contact-section > h2::after{
+    content: " ";
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background-color: #f39c12;
+    border-radius: 10px;
+    left: 0;
+    bottom: -4px;
+}
+.contact-section > p{
+    font-size: 16px;
+    max-width: 530px;
+    opacity: .8;
+    line-height: 26px;
+}
+.contact-container{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.contact-container .details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.details .detail{
+    text-align: center;
+}
+.detail .uil{
+    font-size: 33px;
+}
+.detail h3{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 3px;
+}
+.detail p{
+    font-size: 15px;
+    opacity: .8;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input, form textarea{
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin: 15px 0;
+    background-color: rgba(255, 255, 255, 0.895);
+}
+::placeholder{
+    font-size: 15px;
+    color: #333;
+}
+form .input-name{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+.contact-btn{
+    width: 150px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+ </style>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+    <div class="header-1">
+
+        <a href="#" class="logo">Twilight <b style="color: mediumseagreen;">Restaurant</b></a>
+
+      
+
+    </div>
+
+    <div class="header-2">
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="/home.html">home</a>
+            <a href="/food.html">Food</a>
+            <a href="#">Food Delivery</a>
+            <a href="/booking.html">Booking</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/login.html">Log In</a>
+            <a href="/sign.html">Sign Up</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+           
+            <a href="#" class="fas fa-user-circle"></a>
+        </div>
+
+    </div>
+
+</header>
+
+<section class="contact-section" id="ContactUs">
+    <h2>Contact Us</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum est in quos nulla totam voluptatibus!</p>
+
+    <!-- Contact-Container  -->
+    <div class="contact-container" id="FAQ">
+        <div class="details">
+            <div class="detail">
+                <i class="uil uil-mobile-android"></i>
+                <h3>CALL US ON</h3>
+                <P>+91 987-654-321</P>
+            </div>
+            <div class="detail">
+                <i class="uil uil-envelopes"></i>
+                <h3>EMAIL US ON</h3>
+                <P>Example78@gmail.com</P>
+            </div>
+            <div class="detail">
+                <i class="uil uil-location-pin-alt"></i>
+                <h3>VISIT OFFICE</h3>
+                <P>Baramati, Pune</P>
+            </div>
+        </div>
+        <form id="Form" action="#">
+            <div class="input-name">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div><input type="email" placeholder="Your Email">
+            <textarea id="" cols="20" rows="5" placeholder="Your Massage"></textarea>
+            <a href="#" class="btn contact-btn">SUBMIT</a>
+        </form>
+    </div>
+</section>
+
+
+
+</body>
+</html>
